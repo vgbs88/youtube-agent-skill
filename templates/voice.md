@@ -1,8 +1,17 @@
-# voice.md
+# Channel name
 
-Copy this to `~/.claude/youtube/voice.md` and fill it in. Every skill in this pack reads it. Ten
-minutes here is worth more than any prompt you will ever write, because on YouTube you have to say
-the words out loud and a script in the wrong voice is unreadable on camera.
+Copy this to `~/.claude/youtube/channels/<channel-handle>.md`, one file per channel, and fill it in.
+Every skill in this pack reads the profile of the channel you are working on. Things that are true
+of every channel you run go in `_shared.md` in the same folder. Ten minutes here is worth more than
+any prompt you will ever write, because on YouTube you have to say the words out loud and a script
+in the wrong voice is unreadable on camera.
+
+- **Handle:** @handle — https://www.youtube.com/@handle
+- **Language:** the language and spelling the channel publishes in (US English, British English...)
+- **Market:** the country the audience is in
+- **Units:** money, distance, power - whatever the channel quotes
+- **Tagline:** the line the channel signs off with
+- **Scope:** what the channel covers, and what it never covers
 
 ## Who I am talking to
 

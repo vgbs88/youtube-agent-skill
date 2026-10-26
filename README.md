@@ -43,9 +43,14 @@ Python tools, which is most of the point of `/yt-script`, `/yt-retention` and `/
 rest works.
 
 Then spend ten minutes on [`templates/voice.md`](templates/voice.md). Copy it to
-`~/.claude/youtube/voice.md` and fill it in, or send Claude three of your own videos and say "write
-my voice.md from these". Every skill reads that file. It matters more here than anywhere else,
-because you have to say the words out loud.
+`~/.claude/youtube/channels/<channel-handle>.md` and fill it in, or send Claude three of your own
+videos and say "write my channel profile from these". Every skill reads that file. It matters more
+here than anywhere else, because you have to say the words out loud.
+
+More than one channel? One file per channel in `~/.claude/youtube/channels/`, plus an optional
+`_shared.md` for what is true of all of them. Name the channel in your request ("a script for The
+Pickup Files") and the skill reads that profile; if it cannot tell which channel you mean, it asks.
+A single `~/.claude/youtube/voice.md` still works when the folder is empty.
 
 ## The eleven
 

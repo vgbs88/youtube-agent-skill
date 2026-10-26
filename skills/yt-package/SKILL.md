@@ -19,11 +19,17 @@ python3 title.py titles.txt            # one per line, ranked
 
 ## Before you write
 
-1. Read `~/.claude/youtube/voice.md` if it exists. That is the user's voice profile: how they talk
-   on camera, the words they never use, who they are talking to, what they will not claim. If it
-   does not exist, ask for **three of their own videos**, read or transcribe them, infer the voice,
-   and write the file. A script in the wrong voice is worse than no script, because they have to
-   read it out loud.
+1. Find the channel profile. There is one Markdown file per channel in
+   `~/.claude/youtube/channels/` (files starting with `_` are not channels). Read `_shared.md`
+   there first if it exists: it applies to every channel, and the channel file wins where they
+   differ. Use the channel the user named, or the one the task makes obvious - a pasted URL or
+   handle, a topic only one channel covers. If there is more than one profile and it is not
+   obvious, ask which channel before writing anything. The profile is that channel's voice: how
+   it sounds, the words it never uses, who it is talking to, what it will not claim, its language
+   and units. If the folder has no profiles, read `~/.claude/youtube/voice.md` instead. If neither
+   exists, ask for **three of their own videos**, read or transcribe them, infer the voice, and
+   write `~/.claude/youtube/channels/<channel-handle>.md` from `_template.md` in that folder. A
+   script in the wrong voice is worse than no script, because they have to read it out loud.
 2. Never invent a number, a result or a source. If a figure would strengthen it and you do not have
    one, ask for it or write the line without it.
 

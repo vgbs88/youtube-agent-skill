@@ -28,7 +28,8 @@ The tool checks all three and tells you when a list is invalid rather than letti
 `chapters.py` finds the BOUNDARIES well - it scores the pauses you actually took by how much the
 vocabulary shifts across them. The titles it emits are the topic words, and they are a draft. A
 chapter called "Thumbnails Titles Packaging" is a placeholder. Rewrite each one as the promise of
-that section, in the user's voice, three to five words.
+that section, in the channel's voice (its profile in `~/.claude/youtube/channels/`), three to
+five words.
 
 Chapters are also a retention diagnostic: if a section cannot be named in five words, it is two
 sections or it is filler.
